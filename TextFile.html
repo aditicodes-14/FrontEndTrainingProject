@@ -1,0 +1,105 @@
+<!--
+HTML DOM
+css functions:
+:hover
+:out
+:before
+:after
+
+js: client side scripting
+1. inline js
+2. internal
+3. external js (Recommended
+)
+
+<meta charset="utf-8"> //utf-8 latest version and will show same in every country
+<meta description = "Top 10 colleges in bangalore"> //keyword will help in seo, the first link in search page
+<meta browser="IE9,IE8"> //9 for browser support and older versions
+<meta viewport="">
+
+
+<style>
+               .menustyle{
+                display: inline-block;
+                color:aqua;
+
+            } 
+
+            #supplierdetails{
+                background-color: aquamarine;
+            }
+            body{
+                margin: 0;
+            }
+            li{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            li:hover{
+                color:tomato;
+                border: 1px;
+            }
+        </style>
+
+        js data ttypes:
+        ->var (global scope)
+        ->let (local scope) - typescript language
+
+        js functions:
+
+        function functionname(){
+            //statements
+            return // optional
+
+        }
+
+        more tools->developer tools (F12)
+
+        DOM Access in js:-
+js events:-
+->onclick
+->onkeypress
+->onchsnge
+->onkeyup
+->onblur
+->onfocus
+->onmouseover
+->onmouseout
+->ondoubleclick
+->onload
+
+function addProduct(){
+               var status=validate();
+
+               if(status)
+                document.getElementById('msg').innerHTML='<span style="color:green">Product added</span>';
+                else
+                document.getElementById('msg').innerHTML='<span style="color:red">Error!!!</span>';
+            }
+
+            function validate(){
+                var flag=false;
+                var pid = document.getElementById('txtpid').value;
+                var pname = document.getElementById('txtpname').value;
+                var ptype = document.getElementById('ddltype').value;
+                var price = document.getElementById('txtprice').value;
+                if(pid!='' && pname!='' && ptype!='Select' && price!='')
+                // if(pid!='')
+                // flag=true;
+                // else if(pname!='')
+                // flag=true;
+                // else if(ptype!='')
+                // flag=true;
+                // else if(ptype='Select')
+                // flag=true;
+                // else if(price!='')
+                flag=true;
+                else
+                flag=false;
+
+            }
+
+
+            
+
+
+-->
