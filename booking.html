@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+<link href="mystyle.css" rel="stylesheet">
+
+<!-- </style> -->
+    </head>
+
+    <body>
+        <div>
+            <div>
+                <div class="red_header">
+                    <h3> BOOKING FORM <img src="img2.jfif" height="20" width="290" align="right"></h3>
+                    
+                </div>
+                <div class="menustyle">
+                    Passenger <hr>
+                    First Name:<input id="fname" type="text" value=""/>
+                    Last Name:<input id="lname" type="text" value=""/>
+                    
+            Age:<input id="age" type="number" min="1" max="100">
+                <hr>
+                </div>
+                <div class="menustyle">
+                    Leaving from (city or airport):
+                    Going to (city or airport):
+                    Class: <br>
+                    <select id="fromcity" >
+                        <option>ALGIERS</option>
+                        <option>PARIS</option>
+                        <option>LONDON</option>
+                        <option>BERLIN</option>    
+                        </select>
+
+                        <select id="tocity" >
+                            <option>PARIS</option> 
+                            <option>ALGIERS</option>
+                            <option>LONDON</option>
+                            <option>BERLIN</option>    
+                            </select>
+
+                    <select id="classtype">
+                        <option>Select</option>
+                        <option>Business</option>
+                        <option>Economy</option>
+                    </select>
+                </div>
+                <div class="menustyle">
+                    <hr>
+                    Date<br>
+                    Period From:
+                    <!--  :<select type="Date" id="fromdate">
+                        </select>
+                        <select type="Date" id="frommonth">
+                        </select>
+                        <select type="Date" id="fromyear">
+                        </select> -->
+                        <input type="date" id="periodfrom"> <br>
+                        
+                    To :
+                    <!-- <select type="Date" id="todate">
+                        </select> -->
+                        <!-- <input type="month" id="tomonth"> -->
+                        <input type="date" id="periodto">
+                        <!-- <select type="Date" id="tomonth">
+                        </select>
+                        <select type="Date" id="toyear">
+                        </select> -->
+
+                        <!-- <input type="button" value="Go!" onclick="addData()"/> -->
+                        Go!!
+                        <button onclick="addData()" ><img src="img1.jfif" width="10" height="10"></button>
+                        
+                </div>
+                <div class="red_header">
+                    <h4>PROGRAM OF FLIGHTS</h4>
+                </div>
+                <div id="bookingdata">
+                    List of the 
+                </div>
+            </div>
+        </div>
+        <script src="booking.js">
+
+        </script>
+    </body>
+</html>

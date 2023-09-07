@@ -1,4 +1,4 @@
-.menustyle{
+/* .menustyle{
     display: inline-block;
     color:aqua;
 
@@ -16,4 +16,17 @@ li{
 li:hover{
     color:tomato;
     border: 1px;
+} */
+
+.red_header{
+      background-color: red;
+      color:yellow;
 }
+.menustyle{
+    /* display: inline-block; */
+    background-color:gray;
+    color: red;
+    margin: 10;
+    padding: 20;
+
+} 

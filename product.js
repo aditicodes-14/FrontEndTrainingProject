@@ -1,4 +1,7 @@
 //declare golabl var
+// var productList=[55, 12,]
+
+
 var productList=[];
 
 setInterval(function(){
