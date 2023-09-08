@@ -14,9 +14,9 @@ function multiplication(a,b){
 console.log(multiplication(5));
 console.log(multiplication(5,10));
 console.log(multiplication());
-
-// WITH DEFAULT PARAMETERS:-
-///////////////////////////////////
+console.log('\n');
+// // WITH DEFAULT PARAMETERS:-
+// ///////////////////////////////////
 function multiplication(a=5,b=10){
 	return a*b;
 }
@@ -27,9 +27,9 @@ console.log(multiplication(3, undefined));
 console.log(multiplication(undefined,2));
 
 
-function multiplication(a,b=2){
-	return a*b;
-}
+// function multiplication(a,b=2){
+// 	return a*b;
+// }
 
 
 function calculateArea(width = 5, height = 10) {
@@ -48,5 +48,5 @@ function calculateArea(width = 5, height = 10) {
   
   showMessage("Hello, world!");             // Output: "Message: Hello, world!, Color: black"
   showMessage("Goodbye!", "red");           // Output: "Message: Goodbye!, Color: red"
-  
+//   
 
