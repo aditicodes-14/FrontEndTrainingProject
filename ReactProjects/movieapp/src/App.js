@@ -1,11 +1,18 @@
 import logo from './logo.svg';
-import './App.css';
 import Menubar from './menu';
-
+import AddMovie from './components/addmovie';
+import AddUser from './components/adduser';
+import AddBooking from './components/addbooking';
 function App() {
   return (
     <div>
       <Menubar></Menubar>
+     
+      <AddMovie></AddMovie>
+      <hr color='black'/>
+      <AddUser></AddUser>
+      <hr color='black'/>
+      <AddBooking></AddBooking>
     </div>
   );
 }
