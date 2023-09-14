@@ -1,6 +1,6 @@
 import React from "react";  //w/o react cannot craete class
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import movieservice from "../services/movieservice";
 class AddMovie extends React.Component{
     constructor(){
         super();
@@ -26,12 +26,20 @@ class AddMovie extends React.Component{
         //how to change state property value->setState()
         this.setState({type:e.target.value}); // change state
     }
-    saveMovie(e){
+    async saveMovie(e){
         alert('Movie added: '+this.state.name + ',' + this.state.type);
+        var result=await movieservice.createMovie(data);
+        this.setState();
         //fetch('.net core api')
+    }
+    async getMovies(){
+        var result = movieservice.getMovies(data);
     }
 //every class fnc should have a render fnc
 
+componentDidMount(){
+    movieservice.getMovies();
+}
     render(){
         return(
             <div>
